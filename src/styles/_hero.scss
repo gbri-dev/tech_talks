@@ -1,0 +1,19 @@
+.hero {
+    padding-top: 64px;
+    padding-bottom: 100px;
+
+    background-image: url(https://static.vecteezy.com/ti/vetor-gratis/p2/952735-resumo-banner-fundo-gr%C3%A1tis-vetor.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    &__text {
+        margin: 64px 0;
+        color: white;
+    }
+
+    &__logo {
+        margin: 0 auto;
+        height: 80px;
+        display: block;        
+    }
+}

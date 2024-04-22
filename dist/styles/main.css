@@ -1,3 +1,22 @@
+.hero {
+  background-image: url("https://static.vecteezy.com/ti/vetor-gratis/p2/952735-resumo-banner-fundo-gr%C3%A1tis-vetor.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 64px;
+  padding-bottom: 100px;
+}
+
+.hero__text {
+  color: #fff;
+  margin: 64px 0;
+}
+
+.hero__logo {
+  height: 80px;
+  margin: 0 auto;
+  display: block;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -9,48 +28,24 @@ body {
   width: 100%;
   max-width: 90%;
   margin: 0 auto;
-  font-family: sans-serif;
+  font-family: Roboto, sans-serif;
 }
 
-.header {
-  color: #1e666c;
-  grid-template-columns: 200px 1fr 30%;
-  align-items: center;
-  display: grid;
+.container {
+  width: 100px;
+  max-width: 950px;
+  margin: 0 auto;
 }
 
-.header .container-img {
-  border-radius: 10%;
-  max-width: 400px;
-  overflow: hidden;
+@media (width <= 640px) {
+  .container {
+    max-width: 80%;
+  }
 }
 
-.header .container-img img {
-  width: 100%;
-}
-
-.header h4 {
-  text-align: center;
-  width: 100%;
-  font-weight: 400;
-}
-
-.header ul {
-  justify-content: end;
-  display: flex;
-}
-
-.header ul li {
-  padding: 8px;
-  list-style: none;
-}
-
-@media (width <= 680px) {
-  .header {
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    display: flex;
+@media (width <= 1024px) {
+  .container {
+    max-width: 90%;
   }
 }
 /*# sourceMappingURL=main.css.map */

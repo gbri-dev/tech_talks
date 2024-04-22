@@ -1,3 +1,4 @@
+@use 'hero';
 
 * {
     margin: 0;
@@ -9,45 +10,22 @@ body {
     max-width: 90%;
     width: 100%;
     margin: 0 auto;
-    font-family: sans-serif;
+    font-family: Roboto, sans-serif;
     background-color: #efefef;
 }
 
-.header {
-    display: grid;
-    grid-template-columns: 200px 1fr 30%;    
-    color: #1e666c;      
-    align-items: center;  
-    .container-img {
-        max-width: 400px;    
-        border-radius: 10%;
-        overflow: hidden;    
-        img {
-            width: 100%;        
-        }
+.container {
+    max-width: 950px;
+    width: 100;
+    margin: 0 auto;
+
+    @media (max-width: 640px) {
+        max-width: 80%;
     }
 
-    h4 {
-        width: 100%;        
-        font-weight: 400;
-        text-align: center;
-    }
-
-    ul {
-        display: flex;        
-        justify-content: end;
-        li {
-            list-style: none;
-            padding: 8px;
-        }
+    @media (max-width: 1024px ) {
+        max-width: 90%;
     }
 }
 
-@media (max-width: 680px) {
-    .header {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-}
+
