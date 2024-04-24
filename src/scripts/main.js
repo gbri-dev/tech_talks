@@ -1,1 +1,1 @@
-console.log('Iniciando projeto com parcel!')
+AOS.init()
