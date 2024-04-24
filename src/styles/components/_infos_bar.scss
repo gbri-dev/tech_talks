@@ -1,0 +1,38 @@
+.infos-bar {
+    padding: 16px 24px;
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between; //distribuido aos extremos ul a direita e button a esqueda
+
+    &__infos {
+        display: flex;
+        gap: 40px;            
+
+        &__item {
+            font-size: 14px;
+
+            b {
+                display: block;
+                font-size: 18px;
+            }
+        }
+    }
+
+    @media (max-width: 640px) {
+        display: block;
+
+        &__infos {
+            display: block;
+
+            &__item {
+                margin-bottom: 18px;
+            }
+        }
+    }
+
+    @media (max-width: 1024px) {
+        &__infos {
+            gap: 16px;
+        }
+    }
+}
