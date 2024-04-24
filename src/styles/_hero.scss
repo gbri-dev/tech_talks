@@ -1,19 +1,49 @@
 .hero {
+    position: relative;
     padding-top: 64px;
     padding-bottom: 100px;
 
-    background-image: url(https://static.vecteezy.com/ti/vetor-gratis/p2/952735-resumo-banner-fundo-gr%C3%A1tis-vetor.jpg);
+    background-image: url(https://cdn.pixabay.com/photo/2012/08/27/14/19/mountains-55067_1280.png);
     background-repeat: no-repeat;
     background-size: cover;
+
+    &::before {
+        position:absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #000;
+        content: '';
+        opacity: .7;
+    }
     
     &__text {
         margin: 64px 0;
+        font-size: 40px;
+        line-height: 56px;
         color: white;
+        font-weight: 800;
+        text-align: center;
     }
 
     &__logo {
         margin: 0 auto;
-        height: 80px;
+        height: 90px;
         display: block;        
+    }
+
+    @media (max-width: 640px) {
+        padding: 40px 0;
+
+        &__logo {
+            height: 54px;
+        }
+
+        &__text {
+            font-size: 22px;
+            line-height: 24px;
+            margin: 24px 0;
+        }
     }
 }

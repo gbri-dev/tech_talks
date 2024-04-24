@@ -4,21 +4,14 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: Roboto, sans-serif;
 }
 
-body {
-    max-width: 90%;
+.container {        
+    max-width: 950px;
     width: 100%;
     margin: 0 auto;
-    font-family: Roboto, sans-serif;
-    background-color: #efefef;
-}
-
-.container {
-    max-width: 950px;
-    width: 100;
-    margin: 0 auto;
-
+    position: relative;
     @media (max-width: 640px) {
         max-width: 80%;
     }
